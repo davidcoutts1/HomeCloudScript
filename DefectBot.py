@@ -198,8 +198,8 @@ def loadWebsite():
       wait = WebDriverWait(driver, 25)
       username_input = driver.find_element("id", "username")
       password_input = driver.find_element("id", "password")
-      username_input.send_keys("david@gethomecloud.com")
-      password_input.send_keys("Hockey14dl!")
+      username_input.send_keys("@gethomecloud.com")
+      password_input.send_keys("")
       time.sleep(10)
       login_button_xpath = "//button[contains(text(), 'Log In')]"
       login_button = wait.until(EC.element_to_be_clickable((By.XPATH, login_button_xpath)))
